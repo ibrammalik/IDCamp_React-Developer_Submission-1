@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav id="navbar">
-            <a href="index.html" class="logo-container">
-                <img src="asset/logo.png" alt="lana" class="logo">
-            </a>
-            <div class="nav-kanan">
-                <a href="#welcome-section" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="menu-toggle">
-                <input type="checkbox">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+      <nav id="navbar">
+        <a href="index.html" class="logo-container">
+          <img src="asset/logo.png" alt="lana" class="logo" />
+        </a>
+        <div class="nav-kanan">
+          <a href="#welcome-section" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
     <main>
-        <div id="content">
-            <article id="welcome-section">
-                <h1>Hey I am Lana</h1>
-                <p>a web developer</p>
-            </article>
-            <article id="about"></article>
-            <article id="work"></article>
-            <article id="contact"></article>
+      <div id="content">
+        <article id="welcome-section">
+          <h1>Hey I am Lana</h1>
+          <p>a web developer</p>
+        </article>
+        <article id="about"></article>
+        <article id="work">
+          <div id="projects-tile-container">
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" />
+              <p class="project-name">Tribute Page</p>
+            </a>
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" />
+              <p class="project-name">Random Quote Machine</p>
+            </a>
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" />
+              <p class="project-name">Javascript Calculator</p>
+            </a>
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" />
+              <p class="project-name">Map Data Across The Globe</p>
+            </a>
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" />
+              <p class="project-name">Wikipedia Viewer</p>
+            </a>
+            <a class="project-tile" href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+              <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" />
+              <p class="project-name">Tic Tac Toe Game</p>
+            </a>
+          </div>
+        </article>
+        <article id="contact">
+          <div id="contact">
+            <p>Let's work together...</p>
+            <p>How do you take your coffee?</p>
+            <div id="contact-container">
+              <a class="logo-container">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <span>Facebook</span>
+              </a>
+              <a class="logo-container">
+                <ion-icon name="logo-github"></ion-icon>
+                <span>GitHub</span>
+              </a>
+              <a class="logo-container">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <span>Twitter</span>
+              </a>
+              <a class="logo-container">
+                <ion-icon name="at-circle"></ion-icon>
+                <span>Send a mail</span>
+              </a>
+              <a class="logo-container">
+                <ion-icon name="call"></ion-icon>
+                <span>Call me</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div id="side-button">
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" id="menu-label">
+            <div class="arrow"></div>
+            <div class="arrow1"></div>
+          </label>
         </div>
-        <aside class="sidebar">
-            <div id="side-button">
-                <input type="checkbox" id="menu-checkbox">
-                <label for="menu-checkbox" id="menu-label">
-                    <div class="arrow"></div>
-                    <div class="arrow1"></div>
-                </label>
-            </div>
-            <div id="biodata-diri">
-                <img src="asset/4_33.jpg" alt="photo-lana" class="photo-profile">
-                <div id="profil">
-                    <p>Maulana Malik Ibrahim</p>
-                    <p>Semarang, 11 Juli 2003</p>
-                </div>
-            </div>
-        </aside>
+        <div id="biodata-diri">
+          <img src="asset/4_33.jpg" alt="photo-lana" class="photo-profile" />
+          <div id="profil">
+            <p>Maulana Malik Ibrahim</p>
+            <p>Semarang, 11 Juli 2003</p>
+          </div>
+        </div>
+      </aside>
     </main>
-    <footer></footer>
+    <footer>
+      <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+      <p>Copyright 2022</p>
+    </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

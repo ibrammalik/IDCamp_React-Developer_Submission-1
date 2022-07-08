@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  padding-bottom: 2000px;
 }
 
 /*Style untuk navbar*/
@@ -23,10 +22,6 @@ body {
   top: 0;
   left: 0;
   min-height: 50px;
-  /*background: rgba(0, 0, 0, 0.31);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.2px);
-  -webkit-backdrop-filter: blur(8.2px);*/
 }
 
 .nav-kanan {
@@ -89,6 +84,82 @@ img {
   justify-content: center;
   flex-direction: column;
   z-index: -1;
+}
+
+/*style untuk project section*/
+#work {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#projects {
+  scroll-margin-top: 20px;
+  margin-top: auto;
+  padding: 20px 5px;
+  text-align: center;
+}
+#projects p {
+  padding: 20px 0px;
+}
+#projects-tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.project-tile {
+  background: gray;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.project-image {
+  height: calc(100% - 68px);
+  width: 100%;
+  object-fit: cover;
+}
+/*Style untuk contact section*/
+#contact {
+  text-align: center;
+  margin: auto;
+  scroll-margin-top: 50px;
+  height: 100vh;
+}
+#contact-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+.logo-container {
+  display: flex;
+  min-width: 15%;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+ion-icon {
+  font-size: 32px;
+}
+.logo-container span {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer p {
+  padding: 5px 10px;
+  margin: 0px 30px;
 }
 
 /*Style untuk sidebar*/
@@ -266,5 +337,17 @@ img {
   }
   .menu-toggle.active .bar:nth-child(4) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  footer,
+  #contact-container {
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+  }
+  footer p {
+    padding: 5px 10px;
+    margin: auto;
+    text-align: center;
   }
 }
