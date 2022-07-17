@@ -73,12 +73,11 @@ img {
 
 /*Style untuk welcome section*/
 #welcome-section {
-  scroll-margin-top: 20px;
   display: flex;
   height: 100vh;
   width: 100%;
   margin: auto;
-  background-image: radial-gradient(circle farthest-corner at 0 0, #e7e4dc, #9d9e86);
+  /*background-image: radial-gradient(circle farthest-corner at 0 0, #e7e4dc, #9d9e86);*/
   color: black;
   align-items: center;
   justify-content: center;
@@ -88,17 +87,12 @@ img {
 
 /*style untuk project section*/
 #work {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-#projects {
-  scroll-margin-top: 20px;
+  /*scroll-margin-top: 20px;*/
   margin-top: auto;
   padding: 20px 5px;
   text-align: center;
 }
-#projects p {
+#work p {
   padding: 20px 0px;
 }
 #projects-tile-container {
@@ -127,6 +121,7 @@ img {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 #contact-container {
   display: flex;
@@ -162,7 +157,7 @@ footer p {
 .sidebar {
   text-align: center;
   position: fixed;
-  right: -260px;
+  right: -330px;
   top: 10vh;
   transition: all 0.75s ease-in-out;
   display: flex;
@@ -234,7 +229,7 @@ footer p {
   backdrop-filter: blur(8.2px);
   -webkit-backdrop-filter: blur(8.2px);
   height: 80vh;
-  width: 250px;
+  width: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
