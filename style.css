@@ -333,7 +333,6 @@ footer p {
   footer,
   #contact-container {
     flex-wrap: wrap;
-    margin: auto;
     flex-direction: column;
   }
   footer p {
