@@ -330,6 +330,14 @@ footer p {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .logo-container {
+    flex-direction: column;
+  }
+
+  #contact-container {
+    gap: 20px;
+  }
+
   footer,
   #contact-container {
     flex-wrap: wrap;
