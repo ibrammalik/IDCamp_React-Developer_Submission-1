@@ -123,18 +123,18 @@ img {
 /*Style untuk contact section*/
 #contact {
   text-align: center;
-  margin: auto;
-  scroll-margin-top: 50px;
   height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 #contact-container {
   display: flex;
-  width: 100%;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  margin: 10px 10px;
 }
 .logo-container {
   display: flex;
@@ -142,12 +142,8 @@ img {
   max-width: 150px;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px;
 }
-ion-icon {
-  font-size: 32px;
-}
-.logo-container span {
+.logo-container p {
   text-align: center;
 }
 
