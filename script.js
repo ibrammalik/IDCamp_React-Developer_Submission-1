@@ -10,7 +10,7 @@ sideButton.addEventListener("click", function () {
   console.log("ok");
 });
 
-//mobile nav menu
+//Menu Navigasi Breakpoint 768px
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-kanan");
 
@@ -20,7 +20,7 @@ menuToggle.addEventListener("click", function () {
   sidebar.classList.toggle("active");
 });
 
-//close mobile nav menu when clicked any menu
+//Tutup Menu Navigasi Saat Klik Pilihan Menu
 const clickedMenu = document.querySelectorAll(".nav-link");
 
 clickedMenu.forEach((n) =>
